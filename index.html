@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>✈️ Vines de Guerra — Aviones Militares Modernos</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ====== RADAR BG ====== -->
+  <div class="bg-radar"></div>
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <span class="logo">✈️ VINES DE GUERRA</span>
+      <div class="nav-right">
+        <span class="nav-badge" id="navBadge">40 AVIONES</span>
+        <button class="btn-random" id="btnRandom" title="Avión aleatorio">🎲</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <header class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-tag">✈️ AVIONES DE GUERRA MODERNOS</div>
+      <h1 class="hero-title" id="heroTitle">
+        <span class="line-top">AVIONES DE</span>
+        <span class="line-bottom glitch-war" data-text="GUERRA">GUERRA</span>
+      </h1>
+      <p class="hero-sub" id="heroSub">
+        40 aeronaves militares que marcaron la historia del combate aéreo.<br/>
+        Cazas stealth, bombarderos, helicópteros, drones y leyendas.
+      </p>
+      <div class="era-filters" id="eraFilters">
+        <button class="era-btn active" data-era="all">🔥 Todas</button>
+        <button class="era-btn" data-era="5ta Gen">5ta Gen</button>
+        <button class="era-btn" data-era="4ta Gen">4ta/4.5 Gen</button>
+        <button class="era-btn" data-era="Stealth">Stealth</button>
+        <button class="era-btn" data-era="Ataque">Ataque</button>
+        <button class="era-btn" data-era="Drone">Drones</button>
+        <button class="era-btn" data-era="Leyenda">Leyendas</button>
+      </div>
+    </div>
+    <div class="scroll-hint" id="scrollHint">
+      <span>DESCUBRE</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </header>
+
+  <!-- ====== STATS BAR ====== -->
+  <section class="stats-bar">
+    <div class="stat-item"><span class="stat-num" id="totalWars">40</span><span class="stat-label">AVIONES</span></div>
+    <div class="stat-item"><span class="stat-num">70+</span><span class="stat-label">AÑOS</span></div>
+    <div class="stat-item"><span class="stat-num">15+</span><span class="stat-label">PAÍSES</span></div>
+  </section>
+
+  <!-- ====== FEED ====== -->
+  <section class="feed-section" id="feed">
+    <div class="feed-header">
+      <span class="feed-tag">// FLOTA</span>
+      <div class="feed-controls">
+        <span class="feed-count" id="feedCount">Mostrando 0</span>
+        <div class="view-toggle">
+          <button class="view-btn active" data-view="grid" title="Grid">⊞</button>
+          <button class="view-btn" data-view="list" title="Lista">☰</button>
+        </div>
+      </div>
+    </div>
+    <div class="war-feed" id="warFeed">
+      <!-- JS genera cards -->
+    </div>
+  </section>
+
+  <!-- ====== MODAL ====== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-inner">
+        <div class="modal-badge">
+          <span class="modal-conflict" id="modalConflict"></span>
+          <span class="modal-year" id="modalYear"></span>
+        </div>
+        <span class="modal-icon" id="modalIcon">✈️</span>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <div class="modal-country" id="modalCountry"></div>
+        <div class="modal-short" id="modalShort"></div>
+        <div class="modal-story" id="modalStory"></div>
+        <div class="modal-stats-box">
+          <span class="box-label">📊 FICHA TÉCNICA</span>
+          <p id="modalStat"></p>
+        </div>
+        <div class="modal-impact-box">
+          <span class="box-label">🌍 IMPACTO</span>
+          <p id="modalImpact"></p>
+        </div>
+        <div class="modal-era-badge" id="modalEraBadge"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== EASTER EGG ====== -->
+  <div class="easter-dot" id="easterDot"></div>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <p>✈️ Vines de Guerra — Aviones Militares Modernos</p>
+    <p class="footer-small">"La superioridad aérea es el requisito previo para la victoria." — Giulio Douhet</p>
+  </footer>
+
+  <script src="stories.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
